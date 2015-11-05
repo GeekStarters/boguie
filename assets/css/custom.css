@@ -1,0 +1,43 @@
+/**
+ *
+ * Apply Here your Custom CSS
+ *
+*/
+
+.login-header{
+    padding: 0px!important;
+}
+.border_b{
+    border-bottom: solid 1px #e1e1e1;
+}
+.page-container .main-content{
+    padding-top: 5px;
+}
+.user-info{
+    margin-right: 60px;
+    margin-top: 15px;
+}
+.row{
+    margin-top: 10px;
+}
+.star{
+    color: red;
+}
+.margintop30{
+    margin-top: 30px;
+}
+.form-group {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+.map-full{
+    margin-right: -20px!important;
+    margin-left: -20px!important;
+    margin-top: 0px!important;
+}
+
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate{
+    border: 0px!important;
+    border-style: none!important;
+    background: none!important;
+}
