@@ -1,2 +1,2 @@
 #! /bin/sh
-php /var/www/html/heytaxi/cron/descuento_cron.php
+php /var/www/html/geotaxi/cron/descuento_cron.php

@@ -5,7 +5,7 @@
 				<!-- logo -->
 				<div class="logo">
                                     <a href="admin_welcome.php">
-                                        <h1 style="padding: 0px !important;margin: 0px !important;color: white;font-weight: bold;font-size: 35px;">HEYTAXI</h1>
+                                        <h1 style="padding: 0px !important;margin: 0px !important;color: white;font-weight: bold;font-size: 35px;">GeoTaxi</h1>
 					</a>
 				</div>
 

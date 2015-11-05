@@ -16,5 +16,5 @@
             });
         </script>
 <div class="footer">
-Chiclayo Taxi (c) 2015 <a href="mailto:soporte@chiclayotaxi.com?Subject=Soporte%20web" target="_top">Contactar soporte</a>
+GeoTaxi Taxi (c) 2015 <a href="mailto:soporte@geotaxi.com?Subject=Soporte%20web" target="_top">Contactar soporte</a>
 </div>

@@ -1,5 +1,5 @@
 <?php
-require_once("/var/www/html/heytaxi/includes/main.inc.php");
+require_once("/var/www/html/geotaxi/includes/main.inc.php");
 $fecha = new DateTime('now', new DateTimeZone('America/Cancun'));
 $today = $fecha->format('Y-m-d');
 //$today_hora = $fecha->format('h:i:s');
