@@ -170,11 +170,6 @@
 								<span class="title">Tarifas</span>
 							</a>
 						</li>
-                                                <li class="<?php if($menu_active == "publicidad"){?> active<?php } ?>">
-							<a href="manage_ads.php">
-								<span class="title">Publicidad</span>
-							</a>
-						</li>
 					</ul>
 				</li>
 				<li class="<?php if($menu_active == "textos" || $menu_active == "password"){?>opened active<?php } ?>">
