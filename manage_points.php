@@ -20,7 +20,7 @@ if(isset($_REQUEST['min']) && isset($_REQUEST['max']) && isset($_REQUEST['discou
             $sel_query = mysql_query("SELECT * FROM gcm_users where email='$passangerEmail' ");
             $passanger_regID[] = $row['gcm_regid'];
             $push_date = date("F j, Y, g:i a");
-            $value = "Felicidades tienes un nuevo descuento para tu proxima carrera de $discount valido hasta el $date";
+            $value = "Felicidades tienes un nuevo descuento para tu proximo servicio de $discount valido hasta el $date";
             $msg ="[$push_date][$value]";
             include_once '../includes/GCM.php';
             $gcm = new GCM();
@@ -71,11 +71,11 @@ if(isset($_REQUEST['min']) && isset($_REQUEST['max']) && isset($_REQUEST['discou
 		<td id="content" align="center"><strong class="msg"><?=display_sess_msg()?></strong>
 			<form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>  style="width:400px;">
 			 	<div class="form-group" >
-				<label for="min">Carreras minimas:</label> 
+				<label for="min">Servicios minimas:</label> 
 				<input type="number" name="min" id="min" class="form-control" value="<?php echo htmlspecialchars($_REQUEST['min']); ?>"><br>
 				</div>
 				<div class="form-group">
-				<label for="max">Carreras maximas:</label> 
+				<label for="max">Servicios maximas:</label> 
 				<input type="number" name="max" id="max" class="form-control" value="<?php echo htmlspecialchars($_REQUEST['max']); ?>"><br>
 				</div>
 				<div class="form-group">

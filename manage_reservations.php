@@ -250,7 +250,7 @@ function printexcel(){
                                     <th>Fecha</th>
                                     <th>Hora</th>
                                     <th>Estado reserva</th>
-                                    <th>Estado carrera</th>
+                                    <th>Estado servicio</th>
                                 </tr>
                                 </thead>
                                 <?php

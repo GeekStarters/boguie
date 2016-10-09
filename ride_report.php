@@ -49,7 +49,7 @@ $url="http://www.graymatter.a2hosted.com/cab/admin/ride_report.php";
     </div>
     <div class="main-content">
         <?php
-			$title_bread = "Reportes de carrera";
+			$title_bread = "Reportes de servicio";
 			include("top.inc.php");
 		?>
         <div class="row margintop30">
@@ -64,7 +64,7 @@ $url="http://www.graymatter.a2hosted.com/cab/admin/ride_report.php";
                     <select class="form-control" name="select_buscar" id="select_buscar" class="pagesize_dropdown" onchange="mostrar()">
                         <option value="0">Buscar por</option>
                         <option value="1">Fechas</option>
-                        <option value="2">Cantidad Carreras</option>
+                        <option value="2">Cantidad Servicios</option>
                     </select>
                 </div>
                 <div class="col-sm-4 text-right">
@@ -95,7 +95,7 @@ $url="http://www.graymatter.a2hosted.com/cab/admin/ride_report.php";
                         
                     <div class="row">
                         <div class="carrera col-sm-5  text-center" style="display:none; margin: auto; float: none;">
-                            Carreras mayor a:
+                            Servicios mayor a:
                             <input class="form-control" name="desde" id="carrera" size="20" type="text" value="" />
                         </div>
                     </div>
@@ -110,7 +110,7 @@ $url="http://www.graymatter.a2hosted.com/cab/admin/ride_report.php";
                             <thead>
                                 <tr>
                                     <th>Fecha</th>
-                                    <th>Total carreras</th>
+                                    <th>Total Servicios</th>
                                     <th>Tarifas calculadas</th>
                                     <th>Monto a pagar a taxistas</th>
                                     <th> </th>

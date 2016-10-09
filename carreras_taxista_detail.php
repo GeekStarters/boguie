@@ -55,7 +55,7 @@ $(document).ready(function() {
 	</div>
 	<div class="main-content">
 
-                <?php $title_bread = "Carreras por taxista";
+                <?php $title_bread = "Servicios por taxista";
                 include("top.inc.php");
 		?>
             <div class="row">

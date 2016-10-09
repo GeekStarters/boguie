@@ -36,7 +36,7 @@ if (isset($_REQUEST['submit'])) {
             $paid_yet = $_REQUEST['paid_yet'];
             $add_date = $_REQUEST['add_date'];
             $usertype = $_REQUEST['usertype'];
-            $status = $_REQUEST['status'];
+            $status= $_REQUEST['status_id'];
 
             if ($_FILES[image][size] > 0) {
                 $driver_images_1 = md5(uniqid(rand(), true)) . '.' . file_ext($_FILES[image]['name']);
@@ -65,7 +65,7 @@ if (isset($_REQUEST['submit'])) {
             add_date ='$add_date',
             usertype = '$usertype',
             image='$driver_images_1',
-            status='1'") or die(mysql_error());
+            status='$status'") or die(mysql_error());
 
             if ($taxi_id != "") {
                 $sql_update = mysql_query("update tbl_cab set with_driver='1' where id='" . $taxi_id . "'") or die(mysql_error());
@@ -105,7 +105,7 @@ if (isset($_REQUEST['update'])) {
             $paid_yet = $_REQUEST['paid_yet'];
             $add_date = $_REQUEST['add_date'];
             $usertype = $_REQUEST['usertype'];
-            $status = $_REQUEST['status'];
+            $status= $_REQUEST['status_id'];
             
             
             if ($_FILES[image][tmp_name]!='') {
@@ -147,7 +147,7 @@ if (isset($_REQUEST['update'])) {
     		paid_yet='$paid_yet',
     		add_date ='$add_date',
     		usertype = '$usertype',
-    		status='1' where id='" . $id . "'";
+    		status='$status' where id='" . $id . "'";
             $sql_update = mysql_query($mysql_var) or die(mysql_error());
             set_session_msg("Taxista actualizado correctamente");
             ?>
@@ -201,10 +201,10 @@ if (isset($_REQUEST['update'])) {
                             <?php $sel="SELECT * FROM `tbl_cab`";
                             $exe=mysql_query($sel) or die("can't access");
                             while($data=mysql_fetch_array($exe)){?> 
-                            <? if($data['with_driver'] == 0){?>
-                                <option value="<?=$data['id']?>"><?=$data['cab_number']?></option>
-                            <? } elseif ($fetch_record['taxi']==$data['id']) { ?>
+                            <? if($fetch_record['taxi']==$data['id']){?>
                                 <option value="<?=$data['id']?>" <? { echo "selected"; }?>><?=$data['cab_number']?></option>
+                            <? }else{ ?>
+                                <option value="<?=$data['id']?>"><?=$data['cab_number']?></option>
                             <? }?>
                             <? }?>
                     </select>
@@ -219,7 +219,7 @@ if (isset($_REQUEST['update'])) {
             <div class="form-group">
                 <label class="col-sm-3 control-label" for="pickup_address">Nombre<span class="star">*</span></label>
                 <div class="col-sm-5">
-                     <input data-validation="custom" data-validation-regexp="^[a-zA-Z ]+$" data-validation="required" data-validation-error-msg="Ingrese un nombre válido" class="form-control" name="fullname" id="fullname" size="48" type="text" value="<?= stripslashes($fullname) ?>" />
+                     <input data-validation="custom" data-validation-regexp="^[a-zA-ZáéíóúàèìòùÀÈÌÒÙÁÉÍÓÚñÑüÜ ]+$" data-validation="required" data-validation-error-msg="Ingrese un nombre válido" class="form-control" name="fullname" id="fullname" size="48" type="text" value="<?= stripslashes($fullname) ?>" />
                 </div>
             </div>
              <div class="form-group">
@@ -287,6 +287,17 @@ if (isset($_REQUEST['update'])) {
                     </div>
                 </div>
             </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" >Estado</label>
+                <div class="col-sm-5">
+                    <select class="form-control" name="status_id" id="status_id">
+                            <option <?php if($status=="Active"){ echo " selected "; } ?>value="1">Activado</option>
+                            <option <?php if($status=="Inactive"){ echo " selected "; } ?>value="2">Desactivado</option>
+
+                    </select>
+<?php //echo $status; ?>
+                </div>
+            </div>
              <div class="form-group">
                  <div class="col-sm-offset-3 col-sm-5">
                     <input name="usertype" size="48" type="text" style="display:none" value="<?= driver ?>" />
@@ -298,6 +309,9 @@ if (isset($_REQUEST['update'])) {
                     <?php } ?>
                  </div>
              </div>
+
+
+
                     
                     
             </form>

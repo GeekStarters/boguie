@@ -107,7 +107,7 @@ $url="http://www.graymatter.a2hosted.com/cab/admin/view_driver_ride_report.php?d
                     
                     <div class="row">
                         <div class="carrera col-sm-5  text-center" style="display:none; margin: auto; float: none;">
-                        Carreras mayor a: 
+                        Servicios mayor a: 
                         <input class="form-control" name="desde" id="carrera" size="20" type="text" value="" />
 
                         </div>

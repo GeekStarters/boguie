@@ -30,8 +30,8 @@ if(isset($_REQUEST['arr_torigen_ids'])){
 $start = intval($start);
 $pagesize = intval($pagesize)==0?$pagesize=DEF_PAGE_SIZE:$pagesize;
 $columns = "select * ";
-$sql = " from tarifario_origen";
-$sql .= " order by origen";
+$sql = " from tarifas";
+$sql .= " order by id";
 
 $sql_count = "select count(*) ".$sql;
 
@@ -69,7 +69,7 @@ function checkall(objForm)
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Tarifas - Puntos de origen";
+			$title_bread = "Tarifas";
 			include("top.inc.php");
 		?>
             <div class="row">
@@ -85,7 +85,7 @@ function checkall(objForm)
                      </div>
                      <div class="col-sm-6 text-right">
                             
-                             <a class="btn btn-xs btn-blue" href="torigen_add.php?set_flag=add&start=<?=$start?><?=($cat_parent_id!='' && $cat_parent_id!='')?"&cat_parent_id=$cat_parent_id":""?>">Agregar nuevo punto origen</a>
+                             <a class="btn btn-xs btn-blue" href="torigen_add.php?set_flag=add&start=<?=$start?><?=($cat_parent_id!='' && $cat_parent_id!='')?"&cat_parent_id=$cat_parent_id":""?>">Agregar</a>
                              <br><br>
                             <?php
                             if(mysql_num_rows($result)==0){?>
@@ -109,7 +109,9 @@ function checkall(objForm)
                                 <tr>
                                   <th>Marcar todos <input name="check_all" type="checkbox" id="check_all" value="1" onClick="checkall(this.form)" /></th>
                                   <th >&nbsp;</th>						
-                                  <th>Origen</th>
+                                  <th>Nombre</th>
+                                  <th>Distancia</th>
+                                  <th>Costo</th>
                                   <th>Estado</th>
                                 </tr>
                         </thead>
@@ -134,7 +136,9 @@ function checkall(objForm)
                         <td>&nbsp;&nbsp;<?=$cnt;?> <input name="arr_torigen_ids[]" type="checkbox" id="arr_cat_ids[]" value="<?=$line_raw['id'];?>" />
                         <input type="hidden" name="u_status_arr[]"  value="<?=($cat_status=='Active')?'Active':'Inactive';?>" /></td>
                         <td><a class="btn btn-default btn-sm btn-icon icon-left" href="torigen_add.php?id=<?=$line_raw['id']?>&set_flag=update"><i class="entypo-pencil"></i>Editar</a> </td>
-                        <td><?=stripslashes($line_raw['origen']);?></td>
+                        <td><?=stripslashes($line_raw['nombre']);?></td>
+                        <td><?=$line_raw['desde']." - ".$line_raw['hasta'];?></td>
+                        <td><?=stripslashes($line_raw['costo']);?></td>
                         <td><?=$line_raw['status'];?></td>
                         </tr>
                         <?php }?>

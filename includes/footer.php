@@ -1,0 +1,1 @@
+ <div class="footer">© 2015. All rights reserved.</div>

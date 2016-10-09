@@ -8,7 +8,7 @@ function connect_db()
                 //$GLOBALS['dbcon'] =	mysql_connect('localhost', 'root', '');
 		//mysql_select_db('heytaxi') or die("Could not connect to database. Please check configuration and ensure MySQL is running.");
                 $GLOBALS['dbcon'] =	mysql_connect('localhost', 'root', 'root');
-		mysql_select_db('gs_heytaxi') or die("Could not connect to database. Please check configuration and ensure MySQL is running.");
+		mysql_select_db('gs_geotaxi') or die("Could not connect to database. Please check configuration and ensure MySQL is running.");
 	}
 }
 

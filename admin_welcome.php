@@ -72,7 +72,7 @@ $reccnt = mysql_result($count_result, 0);
                                                     <th width="10%" nowrap="nowrap">Fecha</th>
                                                     <th width="10%" nowrap="nowrap">Hora</th>
                                                     <th width="15%">Estado reserva</th>
-                                                    <th width="15%">Estado carrera</th>
+                                                    <th width="15%">Estado servicio</th>
                                                 </tr>
                                                 </thead>
                                                 <?php

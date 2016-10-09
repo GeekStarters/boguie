@@ -99,19 +99,19 @@
 						<!--<li  class="<?php if($menu_active == "carreras"){?> active<?php } ?>">
 							<a href="ride_report.php">
 								
-								<span class="title">Reporte de carreras</span>
+								<span class="title">Reporte de servicios</span>
 							</a>
 						</li>-->
                                                 <li  class="<?php if($menu_active == "carrera_cliente"){?> active<?php } ?>">
                                                     <a href="carreras_cliente.php">
 								
-								<span class="title">Reporte - Carreras por Cliente</span>
+								<span class="title">Reporte - Servicios por Cliente</span>
 							</a>
 						</li>
                                                 <li  class="<?php if($menu_active == "carrera_taxista"){?> active<?php } ?>">
 							<a href="carreras_taxista.php">
 								
-								<span class="title">Reporte - Carreras por Taxista</span>
+								<span class="title">Reporte - Servicios por Taxista</span>
 							</a>
 						</li>
 						<!--<li class="<?php if($menu_active == "porconductor"){?> active<?php } ?>">
@@ -165,14 +165,9 @@
 								<span class="title">Cambiar radio de busqueda</span>
 							</a>
 						</li>
-                                                <li class="<?php if($menu_active == "torigen"){?> active<?php } ?>">
+                            <li class="<?php if($menu_active == "torigen"){?> active<?php } ?>">
 							<a href="manage_torigen.php">
-								<span class="title">Tarifas - Punto de origen</span>
-							</a>
-						</li>
-                                                <li class="<?php if($menu_active == "tdestino"){?> active<?php } ?>">
-							<a href="manage_tdestino.php">
-								<span class="title">Tarifas - Punto de destino</span>
+								<span class="title">Tarifas</span>
 							</a>
 						</li>
                                                 <li class="<?php if($menu_active == "publicidad"){?> active<?php } ?>">

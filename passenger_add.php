@@ -35,6 +35,7 @@ if (isset($_REQUEST['submit'])) {
         $usertype = $_REQUEST['usertype'];
         $status = $_REQUEST['status'];
         $birthday = $_REQUEST['birthday'];
+        $status= $_REQUEST['status_id'];
 
         if ($_FILES[image][size] > 0) {
             $driver_images_1 = md5(uniqid(rand(), true)) . '.' . file_ext($_FILES[image]['name']);
@@ -65,7 +66,7 @@ if (isset($_REQUEST['submit'])) {
 		add_date ='$add_date',
 		usertype = '$usertype',
 		image='$driver_images_1',
-		status='1'") or die(mysql_error());
+		status='$status'") or die(mysql_error());
 
         set_session_msg("Pasajero ha sido guardado correctamente");
         ?>
@@ -97,6 +98,7 @@ if (isset($_REQUEST['update'])) {
         $usertype = $_REQUEST['usertype'];
         $status = $_REQUEST['status'];
         $birthday = $_REQUEST['birthday'];
+        $status= $_REQUEST['status_id'];
 
         if ($_FILES[image][size] > 0) {
             $cat_res = mysql_fetch_array(db_query("select * from tbl_user where id='$id'"));
@@ -126,7 +128,7 @@ if (isset($_REQUEST['update'])) {
 		birthday ='$birthday',
 		add_date ='$add_date',
 		usertype = '$usertype',
-		status='1' where id='" . $id . "'") or die(mysql_error());
+		status='$status' where id='" . $id . "'") or die(mysql_error());
 
         set_session_msg("Pasajero actualizado");
         ?>
@@ -172,7 +174,7 @@ if (isset($_REQUEST['update'])) {
                 <div class="form-group">
                     <label class="col-sm-3 control-label" for="pickup_address">Nombre<span class="star">*</span></label>
                     <div class="col-sm-5">
-                        <input data-validation="custom" data-validation-regexp="^[a-zA-Z ]+$" data-validation="required" data-validation-error-msg="Ingrese un nombre válido" class="form-control" name="fullname" id="fullname"  size="48" type="text" value="<?= stripslashes($fullname) ?>" />
+                        <input data-validation="custom" data-validation-regexp="^[a-zA-ZáéíóúàèìòùÀÈÌÒÙÁÉÍÓÚñÑüÜ ]+$" data-validation="required" data-validation-error-msg="Ingrese un nombre válido" class="form-control" name="fullname" id="fullname"  size="48" type="text" value="<?= stripslashes($fullname) ?>" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -253,6 +255,18 @@ if (isset($_REQUEST['update'])) {
                         </div>
                     </div>
                 </div>
+
+                <div class="form-group">
+                <label class="col-sm-3 control-label" >Estado</label>
+                <div class="col-sm-5">
+                    <select class="form-control" name="status_id" id="status_id">
+                            <option <?php if($status=="Active"){ echo " selected "; } ?>value="1">Activado</option>
+                            <option <?php if($status=="Inactive"){ echo " selected "; } ?>value="2">Desactivado</option>
+
+                    </select>
+                </div>
+            </div>
+
                 
                 <input style="display:none" name="usertype" size="48" type="text" value="<?= passenger ?>" />
                     

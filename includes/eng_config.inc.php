@@ -5,15 +5,15 @@ if(!defined('LOCAL_MODE')) {
 
 if(LOCAL_MODE){
     $ARR_CFGS["db_host"] = 'localhost';
-	$ARR_CFGS["db_name"] = 'gs_chiclayo';
-    $ARR_CFGS["db_user"] = 'chiclayo';
-    $ARR_CFGS["db_pass"] = 'Tri75axe!';
+	$ARR_CFGS["db_name"] = 'gs_geotaxi';
+    $ARR_CFGS["db_user"] = 'root';
+    $ARR_CFGS["db_pass"] = 'root';
 	define('SITE_SUB_PATH', '/cab/');
 }else {
     $ARR_CFGS["db_host"] = 'localhost';
-	$ARR_CFGS["db_name"] = 'gs_chiclayo';
-    $ARR_CFGS["db_user"] = 'chiclayo';
-    $ARR_CFGS["db_pass"] = 'Tri75axe!';
+	$ARR_CFGS["db_name"] = 'gs_geotaxi';
+    $ARR_CFGS["db_user"] = 'root';
+    $ARR_CFGS["db_pass"] = 'root';
 	define('SITE_SUB_PATH', '/PATH FROM ROOT/'); // please replace "PATH FROM ROOT" with your path from root here. If your application is in root, leave it as /
 }
 

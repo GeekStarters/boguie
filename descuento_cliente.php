@@ -78,8 +78,8 @@ $(document).ready(function() {
                 <th>ID</th>
                 <th>Cliente</th>
                 <th>Email</th>
-                <th>Carreras totales</th>
-                <th>Carreras acumuladas</th>
+                <th>Servicios totales</th>
+                <th>Servicios acumuladas</th>
                 <th>Detalles</th>
             </tr>
         </thead>
@@ -89,8 +89,8 @@ $(document).ready(function() {
                 <th>ID</th>
                 <th>Cliente</th>
                 <th>Email</th>
-                <th>Carreras totales</th>
-                <th>Carreras acumuladas</th>
+                <th>Servicios totales</th>
+                <th>Servicios acumuladas</th>
                 <th>Detalles</th>
             </tr>
         </tfoot>
