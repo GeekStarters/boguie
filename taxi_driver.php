@@ -49,7 +49,7 @@ $result_taxis = mysql_query($sql_taxis);
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Asociar taxi a taxista";
+			$title_bread = "Asociar vehicuo a conductor";
 			include("top.inc.php");
 		?>
 		

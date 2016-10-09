@@ -25,9 +25,9 @@ li{
 <li><a href="manage_category.php">Categorias de taxis</a></li>
 
 <li><br><b><span class="sublinkshead">Administrar unidades</span></b></li>
-<li><a href="manage_cab.php">Taxis</a></li>
-<li><a href="map.php">Mapa de taxis</a></li>
-<li><a href="taxi_driver.php">Taxi - Conductores</a></li>
+<li><a href="manage_cab.php">Vehiculos</a></li>
+<li><a href="map.php">Mapa de vehiculos</a></li>
+<li><a href="taxi_driver.php">Vehiculos - Conductores</a></li>
 
 <li><br><b><span class="sublinkshead">Administrar usuarios</span></b></li>
 <li><a href="manage_driver.php">Conductores</a></li>

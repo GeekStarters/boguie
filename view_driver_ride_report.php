@@ -163,7 +163,7 @@ $url="http://www.graymatter.a2hosted.com/cab/admin/view_driver_ride_report.php?d
                                 <th>Tarifa</th>
                                 <th>Distancia</th>
                                 <th>Valoración</th>
-                                <th>Monto taxista</th>
+                                <th>Monto conductor</th>
                             </tr>
                     </thead>
                     <?php

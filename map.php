@@ -277,7 +277,7 @@ if($_SESSION['sess_admin_id']==''){
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Mapa de taxis en servivio";
+			$title_bread = "Mapa de vehiculos en servivio";
 			//include("top.inc.php");
 		?>
                         <div class="row border_b">
@@ -334,7 +334,7 @@ if($_SESSION['sess_admin_id']==''){
                 <div class="col-sm-6">
                     <form  class="form-horizontal form-groups-b" action="" method="post">
                         <div class="input-group">
-                            <input class="form-control" placeholder="Escriba el nombre o id del taxista" name="buscar" type="text">
+                            <input class="form-control" placeholder="Escriba el nombre o id del conductor" name="buscar" type="text">
                             <span class="input-group-btn">
                                 <button class="btn btn-blue" type="submit">Buscar</button>
                             </span>

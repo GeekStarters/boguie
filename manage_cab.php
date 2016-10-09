@@ -8,15 +8,15 @@ if(isset($_REQUEST['arr_ids'])){
 		if(isset($_REQUEST['Delete'])){
 			$sql = "delete from  tbl_cab where id in ($str_ids)";
 			db_query($sql);
-			set_session_msg("Taxis seleccionados eliminados");
+			set_session_msg("Conductores seleccionados eliminados");
 		}else if(isset($_REQUEST['Activate']) || isset($_REQUEST['Activate_x'])){
 			$sql = "update tbl_cab  set status = '1' where id in ($str_ids)";
 			db_query($sql);
-			set_session_msg("Taxis seleccionados activados");
+			set_session_msg("Conductores seleccionados activados");
 		}else if(isset($_REQUEST['Deactivate']) || isset($_REQUEST['Deactivate_x'])){
 			$sql = "update tbl_cab set status = '0' where id in ($str_ids)";
 			db_query($sql);
-			set_session_msg("Taxis seleccionados desactivados");
+			set_session_msg("Conductores seleccionados desactivados");
 		}
 	}
 	header("Location: ".$_SERVER['HTTP_REFERER']);
@@ -81,7 +81,7 @@ function checkall(objForm)
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Administrar Taxis";
+			$title_bread = "Administrar Conductores";
 			include("top.inc.php");
 		?>
             <div class="row">

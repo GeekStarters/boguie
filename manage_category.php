@@ -72,7 +72,7 @@ function checkall(objForm)
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Categorias de taxis";
+			$title_bread = "Categorias de vehiculos";
 			include("top.inc.php");
 		?>
             <div class="row">
@@ -139,7 +139,7 @@ function checkall(objForm)
                         <input type="hidden" name="u_status_arr[]"  value="<?=($cat_status=='Active')?'Active':'Inactive';?>" /></td>
                         <td><a class="btn btn-default btn-sm btn-icon icon-left" href="category_add.php?category_id=<?=$line_raw['cat_id']?>&set_flag=update"><i class="entypo-pencil"></i>Editar</a> </td>
                         <td><?=stripslashes($line_raw['cat_name']);?></td>
-                        <td><a href="manage_cab.php?cid=<?php echo $line_raw['cat_id'];?>">Ver Taxis</a></td>
+                        <td><a href="manage_cab.php?cid=<?php echo $line_raw['cat_id'];?>">Ver Vehiculo</a></td>
                         <td><?=$line_raw['cat_status'];?></td>
                         </tr>
                         <?php }?>

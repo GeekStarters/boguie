@@ -59,7 +59,7 @@ function checkall(objForm)
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Ingresos por taxis";
+			$title_bread = "Ingresos por vehiculo";
 			include("top.inc.php");
 		?>
             <div class="row margintop30">

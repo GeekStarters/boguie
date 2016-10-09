@@ -9,15 +9,15 @@ if (isset($_REQUEST['arr_ids'])) {
         if (isset($_REQUEST['Delete'])) {
             $sql = "delete from  tbl_user where id in ($str_ids)";
             db_query($sql);
-            set_session_msg("Taxista eliminado correctamente");
+            set_session_msg("Conductor eliminado correctamente");
         } else if (isset($_REQUEST['Activate'])) {
             $sql = "update tbl_user  set status = 'Active' where id in ($str_ids)";
             db_query($sql);
-            set_session_msg("Taxista activado correctamente");
+            set_session_msg("Conductor activado correctamente");
         } else if (isset($_REQUEST['Deactivate'])) {
             $sql = "update tbl_user set status = 'Inactive' where id in ($str_ids)";
             db_query($sql);
-            set_session_msg("Taxista desactivado correctamente");
+            set_session_msg("Conductor desactivado correctamente");
         }
     }
     header("Location: " . $_SERVER['HTTP_REFERER']);
@@ -84,7 +84,7 @@ include './header.php';
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Administrar Taxistas";
+			$title_bread = "Administrar Conductores";
 			include("top.inc.php");
 		?>
             <div class="row">
@@ -99,7 +99,7 @@ include './header.php';
                     </div>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a class="btn btn-xs btn-blue" href="driver_add.php?set_flag=add&start=<?=$start?>">Agregar nuevo taxista </a>
+                    <!-- <a class="btn btn-xs btn-blue" href="driver_add.php?set_flag=add&start=<?=$start?>">Agregar nuevo Conductor </a> -->
                     <br><br><?php
                     if(mysql_num_rows($result)==0){?>
                     <div class="msg">No se encontraron registros.</div>

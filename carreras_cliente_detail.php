@@ -73,7 +73,7 @@ $(document).ready(function() {
             <tr>
                 <th>N°</th>
                 <th>Cliente</th>
-                <th>Taxista</th>
+                <th>Conductor</th>
                 <th>Fecha</th>
                 <th>Hora</th>
                 <th>Dirección</th>
@@ -84,7 +84,7 @@ $(document).ready(function() {
             <tr>
                 <th>N°</th>
                 <th>Cliente</th>
-                <th>Taxista</th>
+                <th>Conductor</th>
                 <th>Fecha</th>
                 <th>Hora</th>
                 <th>Dirección</th>

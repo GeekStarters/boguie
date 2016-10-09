@@ -39,7 +39,7 @@
                 <br />
                 <table  border="0" width="70%"align="center" cellpadding="2" cellspacing="0" class="tableSearch">
             <tr align="center">
-                <th colspan="2">Radio de busqueda de taxis</span>
+                <th colspan="2">Radio de busqueda de vehiculos</span>
                 </th>
             </tr>
             

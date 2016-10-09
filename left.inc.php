@@ -111,10 +111,10 @@
                                                 <li  class="<?php if($menu_active == "carrera_taxista"){?> active<?php } ?>">
 							<a href="carreras_taxista.php">
 								
-								<span class="title">Reporte - Servicios por Taxista</span>
+								<span class="title">Reporte - Servicios por Conductor</span>
 							</a>
 						</li>
-						<!--<li class="<?php if($menu_active == "porconductor"){?> active<?php } ?>">
+						<li class="<?php if($menu_active == "porconductor"){?> active<?php } ?>">
 							<a href="carrier_report.php">
 								
 								<span class="title">Por conductor</span>
@@ -123,7 +123,7 @@
                                                 <li class="<?php if($menu_active == "balance"){?> active<?php } ?>">
 							<a href="balance_report.php">
 								
-								<span class="title">Reporte de ingresos por taxis</span>
+								<span class="title">Reporte de ingresos por Conductor</span>
 							</a>
 						</li>
                                                 <li>
@@ -131,7 +131,7 @@
 								
 								<span class="title">Reporte de ingresos por carreras</span>
 							</a>
-						</li>-->
+						</li>
 					</ul>
 				</li>
 				<li class="<?php if($menu_active == "cupones" || $menu_active == "descuento" ||  $menu_active == "tdestino" || $menu_active == "torigen" || $menu_active == "puntos" || $menu_active == "calendario" || $menu_active == "notificacion" || $menu_active == "radio"){?>opened active<?php } ?>">

@@ -55,7 +55,7 @@ $(document).ready(function() {
 	</div>
 	<div class="main-content">
 
-                <?php $title_bread = "Servicios por taxista";
+                <?php $title_bread = "Servicios por conductor";
                 include("top.inc.php");
 		?>
             <div class="row">
@@ -72,7 +72,7 @@ $(document).ready(function() {
         <thead>
             <tr>
                 <th>N°</th>
-                <th>Taxista</th>
+                <th>Conductor</th>
                 <th>Cliente</th>
                 <th>Fecha</th>
                 <th>Hora</th>
@@ -83,7 +83,7 @@ $(document).ready(function() {
         <tfoot>
             <tr>
                 <th>N°</th>
-                <th>Taxista</th>
+                <th>Conductor</th>
                 <th>Cliente</th>
                 <th>Fecha</th>
                 <th>Hora</th>

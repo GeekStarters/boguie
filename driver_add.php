@@ -72,7 +72,7 @@ if (isset($_REQUEST['submit'])) {
             }
             
 
-             set_session_msg("Taxista actualizado correctamente");
+             set_session_msg("Conductor actualizado correctamente");
             ?>
         <script language="javascript">location.href = 'manage_driver.php'</script>
         <?php
@@ -149,7 +149,7 @@ if (isset($_REQUEST['update'])) {
     		usertype = '$usertype',
     		status='$status' where id='" . $id . "'";
             $sql_update = mysql_query($mysql_var) or die(mysql_error());
-            set_session_msg("Taxista actualizado correctamente");
+            set_session_msg("Conductor actualizado correctamente");
             ?>
             
         <script language="javascript">location.href = 'manage_driver.php'</script>
@@ -248,7 +248,7 @@ if (isset($_REQUEST['update'])) {
             </div>
             
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="pickup_address">Foto Taxista</label>
+                <label class="col-sm-3 control-label" for="pickup_address">Foto Conductor</label>
                 <div class="col-sm-5">
                       <input class="form-control" name="image" type="file" >
                       <?php if($_REQUEST['set_flag'] == 'update'){?>
