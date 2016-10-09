@@ -277,7 +277,7 @@ if($_SESSION['sess_admin_id']==''){
 	</div>
 	<div class="main-content">
 		<?php
-			$title_bread = "Mapa de vehiculos en servivio";
+			$title_bread = "Mapa de vehiculos en servicio";
 			//include("top.inc.php");
 		?>
                         <div class="row border_b">

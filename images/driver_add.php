@@ -232,7 +232,7 @@ else echo "Agregar conductor"; ?></div></td></tr>
                     </tr>
                     <tr><td height="10"></td></tr>
                     <tr>
-                        <td class="lightGrayBg" width="20%">Taxi</td>
+                        <td class="lightGrayBg" width="20%">Vehiculo</td>
                         <td class="tdLabel"><select name="taxi_id" id="taxi_id" style="width:200px; "/>
                             <option value="">Sin taxi</option>
                             <?php $sel="SELECT * FROM `tbl_cab`";
@@ -248,7 +248,7 @@ else echo "Agregar conductor"; ?></div></td></tr>
                     </tr>
                     <tr><td class='tdLabel' colspan='2'>&nbsp;</td></tr>
                     <tr>
-                        <td class="lightGrayBg" valign="top" nowrap>DNI<span class="star">*</span></td>
+                        <td class="lightGrayBg" valign="top" nowrap>Licencia<span class="star">*</span></td>
                         <td class="lightGrayBg"><input name="dni" id="dni" size="48" type="text" value="<?= stripslashes($dni) ?>" /></td>
                     </tr>
                     <tr><td class='tdLabel' colspan='2'>&nbsp;</td></tr>
