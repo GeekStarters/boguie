@@ -16,5 +16,5 @@
             });
         </script>
 <div class="footer">
-GeoTaxi Taxi (c) 2015 <a href="mailto:soporte@geotaxi.com?Subject=Soporte%20web" target="_top">Contactar soporte</a>
+Boguie (c) 2015 <a href="mailto:soporte@boguie.com?Subject=Soporte%20web" target="_top">Contactar soporte</a>
 </div>

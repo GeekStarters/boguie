@@ -13,17 +13,15 @@ $email_address = mysql_real_escape_string(addslashes($_REQUEST['email']));
             $passwd = $res->password;
 
             $to = "$email_address";
-            $subject = "Your Password For Cab Book Now App";
+            $subject = "Tu password para Boguie";
 
-            $message = "<html><head><title>Your Password For GeoTaxi</title></head><body><table><tr><td>User Name:</td><td>$email_address</td></tr><tr><td>Password:</td><td>$passwd</td></tr></table></body></html>";
+            $message = "<html><head><title>Tu password para Boguie</title></head><body><table><tr><td>Usuario:</td><td>$email_address</td></tr><tr><td>Password:</td><td>$passwd</td></tr></table></body></html>";
 
 // Always set content-type when sending HTML email
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-// More headers
-            $headers .= 'From:GeoTaxi<' . $admin_mail . ">\r\n";
-//$headers .= 'Cc: myboss@example.com' . "\r\n";
+            $headers .= 'From:Boguie<' . $admin_mail . ">\r\n";
 
             $mail = mail($to, $subject, $message, $headers);
 

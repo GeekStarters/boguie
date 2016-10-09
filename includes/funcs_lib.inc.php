@@ -3,12 +3,8 @@ function connect_db()
 {
 	global $ARR_CFGS;
 	if (!isset($GLOBALS['dbcon'])) {
-		// $GLOBALS['dbcon'] =	mysql_connect($ARR_CFGS["db_host"], $ARR_CFGS["db_user"], $ARR_CFGS["db_pass"]);
-		//$GLOBALS['dbcon'] =	mysql_connect('localhost', 'chiclayo', 'Tri75axe!');
-                //$GLOBALS['dbcon'] =	mysql_connect('localhost', 'root', '');
-		//mysql_select_db('heytaxi') or die("Could not connect to database. Please check configuration and ensure MySQL is running.");
                 $GLOBALS['dbcon'] =	mysql_connect('localhost', 'root', 'root');
-		mysql_select_db('gs_geotaxi') or die("Could not connect to database. Please check configuration and ensure MySQL is running.");
+		mysql_select_db('boguie') or die("Could not connect to database. Please check configuration and ensure MySQL is running.");
 	}
 }
 

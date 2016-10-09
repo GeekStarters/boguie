@@ -5,7 +5,7 @@
 				<!-- logo -->
 				<div class="logo">
                                     <a href="admin_welcome.php">
-                                        <h1 style="padding: 0px !important;margin: 0px !important;color: white;font-weight: bold;font-size: 35px;">GeoTaxi</h1>
+                                        <h1 style="padding: 0px !important;margin: 0px !important;color: white;font-weight: bold;font-size: 35px;">Boguie</h1>
 					</a>
 				</div>
 
@@ -134,7 +134,7 @@
 						</li>-->
 					</ul>
 				</li>
-				<li class="<?php if($menu_active == "cupones" || $menu_active == "descuento" || $menu_active == "publicidad" || $menu_active == "tdestino" || $menu_active == "torigen" || $menu_active == "puntos" || $menu_active == "calendario" || $menu_active == "notificacion" || $menu_active == "radio"){?>opened active<?php } ?>">
+				<li class="<?php if($menu_active == "cupones" || $menu_active == "descuento" ||  $menu_active == "tdestino" || $menu_active == "torigen" || $menu_active == "puntos" || $menu_active == "calendario" || $menu_active == "notificacion" || $menu_active == "radio"){?>opened active<?php } ?>">
 					<a href="#">
 						<i class="entypo-cog"></i>
 						<span class="title">Administrar</span>

@@ -5,10 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="GeoTaxi - Admin" />
+	<meta name="description" content="Boguie - Admin" />
 	<meta name="author" content="" />
 
-	<title>GeoTaxi - Admin</title>
+	<title>Boguie - Admin</title>
 
 	<link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
 	<link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">

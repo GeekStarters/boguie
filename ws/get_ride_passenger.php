@@ -29,7 +29,7 @@ $min_distance = mysql_query("SELECT ( 3959 * acos( cos( radians($lat) ) * cos( r
     //banner
     $banner=mysql_query("Select * from publicidad where status='active' ORDER BY RAND() LIMIT 1");
     while ($rowBanner = mysql_fetch_array($banner)) {
-        $banner_details['src'] = "http://45.55.20.224/geotaxi/ads/".$rowBanner['src_banner'];
+        $banner_details['src'] = "http://45.55.20.224/boguie/ads/".$rowBanner['src_banner'];
         $banner_details['url'] = $rowBanner['url_open'];
     }
     /// Enviar push a cada usuario cercano y regresar resultados

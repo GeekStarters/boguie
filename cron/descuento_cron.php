@@ -1,6 +1,6 @@
 <?php
-require_once("/var/www/html/geotaxi/includes/main.inc.php");
-$fecha = new DateTime('now', new DateTimeZone('America/Cancun'));
+require_once("/var/www/html/boguie/includes/main.inc.php");
+$fecha = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
 $today = $fecha->format('Y-m-d');
 //$today_hora = $fecha->format('h:i:s');
 //print_r($today_hora);
