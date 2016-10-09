@@ -88,7 +88,7 @@ function checkall(objForm)
                      </div>
                      <div class="col-sm-6 text-right">
                             
-                             <a class="btn btn-xs btn-blue" href="category_add.php?set_flag=add&start=<?=$start?><?=($cat_parent_id!='' && $cat_parent_id!='')?"&cat_parent_id=$cat_parent_id":""?>">Agregar nueva categoria de taxi </a>
+                             <a class="btn btn-xs btn-blue" href="category_add.php?set_flag=add&start=<?=$start?><?=($cat_parent_id!='' && $cat_parent_id!='')?"&cat_parent_id=$cat_parent_id":""?>">Agregar nueva categoria de vehiculo </a>
                              <br><br>
                             <?php
                             if(mysql_num_rows($result)==0){?>
