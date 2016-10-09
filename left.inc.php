@@ -38,7 +38,7 @@
 					<ul>
                                             <li <?php if($menu_active == "categorias"){?> class="active" <?php } ?>>
 							<a href="manage_category.php">
-								<span class="title">Categorias de taxis</span>
+								<span class="title">Categorias de transporte</span>
 							</a>
 						</li>
 					</ul>
@@ -51,7 +51,7 @@
 					<ul>
 						<li <?php if($menu_active == "taxi"){?> class="active" <?php } ?>>
 							<a href="manage_cab.php">
-								<span class="title">Taxis</span>
+								<span class="title">Vehiculos</span>
 							</a>
 						</li>
 						<li <?php if($menu_active == "taxiservicio"){?> class="active" <?php } ?>>
@@ -61,7 +61,7 @@
 						</li>
 						<li>
 							<a href="taxi_driver.php">
-								<span class="title">Taxi - Taxista</span>
+								<span class="title">Conductor</span>
 							</a>
 						</li>
 					</ul>
@@ -74,7 +74,7 @@
 					<ul>
                                             <li class="<?php if($menu_active == "conductores"){?> active<?php } ?>">
 							<a href="manage_driver.php">
-								<span class="title">Taxistas</span>
+								<span class="title">Conductores</span>
 							</a>
 						</li>
 						<li class="<?php if($menu_active == "pasajeros" || $menu_active == "add_passenger"){?> active<?php } ?>">
