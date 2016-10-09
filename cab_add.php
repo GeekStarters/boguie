@@ -257,7 +257,6 @@ if(isset($_REQUEST['set_flag']) && $_REQUEST['set_flag']=='update'){
                 <label class="col-sm-3 control-label" for="pickup_address">Categoría <span class="star">*</span></label>
                 <div class="col-sm-5">
                     <select data-validation="length" data-validation-length="min1" data-validation-error-msg="Seleccione una opcion" class="form-control" name="cat_id" id="scab">
-			<option value="">Select Catagory</option>
 			<?php $sel="SELECT * FROM `tbl_category`";
 			$exe=mysql_query($sel) or die("can't access");
 			while($data=mysql_fetch_array($exe)){?> 
@@ -323,14 +322,14 @@ if(isset($_REQUEST['set_flag']) && $_REQUEST['set_flag']=='update'){
             </div>
             
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="pickup_address">SOAT</label>
+                <label class="col-sm-3 control-label" for="pickup_address">Número de seguro</label>
                 <div class="col-sm-5">
                     <input class="form-control" name="SOAT"  size="48" type="text" value="<?=stripslashes($SOAT)?>" />
                 </div>
             </div>
             
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="pickup_address">Fecha inicio SOAT</label>
+                <label class="col-sm-3 control-label" for="pickup_address">Fecha inicio poliza</label>
                 <div class="col-sm-5">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="entypo-calendar"></i></span>
@@ -340,7 +339,7 @@ if(isset($_REQUEST['set_flag']) && $_REQUEST['set_flag']=='update'){
             </div>
             
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="pickup_address">Fecha fin SOAT</label>
+                <label class="col-sm-3 control-label" for="pickup_address">Fecha fin poliza</label>
                 <div class="col-sm-5">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="entypo-calendar"></i></span>
@@ -349,7 +348,7 @@ if(isset($_REQUEST['set_flag']) && $_REQUEST['set_flag']=='update'){
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="pickup_address">Cobro por KM (S/.)</label>
+                <label class="col-sm-3 control-label" for="pickup_address">Cobro por KM (ARG/.)</label>
                 <div class="col-sm-5">
                     <input class="form-control" name="fare_per_km" id="fare_per_km" size="8" type="text" value="<?=$fare_per_km?>" />
                 </div>
