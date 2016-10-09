@@ -140,16 +140,12 @@
 						<span class="title">Administrar</span>
 					</a>
 					<ul>
-                                            <li class="<?php if($menu_active == "descuento"){?> active<?php } ?>">
-                                                <a href="descuento_cliente.php">
-								<span class="title">Descuentos</span>
-							</a>
-						</li>
-						<!--<li class="<?php if($menu_active == "cupones"){?> active<?php } ?>">
+                                           
+						<li class="<?php if($menu_active == "cupones"){?> active<?php } ?>">
 							<a href="manage_coupon.php">
 								<span class="title">Cupones de descuento</span>
 							</a>
-						</li>-->
+						</li>
 						<li class="<?php if($menu_active == "calendario"){?> active<?php } ?>">
 							<a href="manage_calendar.php">
 								<span class="title">Calendario festivo</span>
